@@ -3,11 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Prova HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      <nav
+        class="navbar navbar-expand-lg bg-dark border-bottom border-body py-3 px-2"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <img
+            src="img/logo manganello.jpg"
+            alt="Logo"
+            class="logo-cerchio"
+            height="60"
+            width="60"
+          />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chisiamo.html">Personaggi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi siamo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <main>
       <div class="header-container" align="center">
         <img
           src="https://mycomics.it/wp-content/uploads/sites/16/2024/02/pxfuel-2048x1164-2.webp"
@@ -17,23 +64,21 @@
         />
         <h1>I 10 Personaggi dei Manga più Amati in Italia</h1>
       </div>
-    </header>
 
-    <div class="subtitles" align="center">
-      <h2>
-        <i>
-          I manga hanno da sempre avuto un impatto significativo sulla cultura
-          pop in tutto il mondo, compreso l’Italia. 
-          Tra storie avvincenti, mondi fantastici e personaggi indimenticabili,
-          hanno conquistato milioni di lettori nel Bel Paese.
-          In questo articolo, esploreremo i 10 personaggi dei manga più amati in
-          Italia dai fan.
-        </i>
-      </h2>
-    </div>
-    <div>
-      <ol style="margin-left: 10%">
-          <li>
+      <div class="subtitles" align="center">
+        <h3>
+          <i>
+            I manga hanno da sempre avuto un impatto significativo sulla cultura
+            pop in tutto il mondo, compreso l’Italia. Tra storie avvincenti,
+            mondi fantastici e personaggi indimenticabili, hanno conquistato
+            milioni di lettori nel Bel Paese. In questo articolo, esploreremo i
+            10 personaggi dei manga più amati in Italia dai fan.
+          </i>
+        </h3>
+      </div>
+      <div>
+        <ol style="margin-left: 10%">
+          <li id="goku">
             <b>Goku <a href="dragonball.html">(Dragon Ball)</a></b
             >:<br />
             Goku è l’iconico protagonista di Dragon Ball, il manga di Akira
@@ -42,7 +87,7 @@
             desiderio di migliorarsi lo rendono un personaggio <br />
             amato da generazioni di lettori italiani.
           </li>
-          <li>
+          <li id="luffy">
             <b>Monkey D. Luffy <a href="onepiece.html">(One Piece)</a></b
             >:<br />
             Capitano dei Pirati Cappello di Paglia, <b>Luffy</b> è un
@@ -52,7 +97,7 @@
             conquistato il cuore dei fan italiani, rendendolo <br />uno dei
             personaggi più amati di sempre.
           </li>
-          <li>
+          <li id="naruto">
             <b>Naruto Uzumaki <a href="naruto.html">(Naruto)</a></b
             >:<br />
             Protagonista dell’omonimo manga scritto e disegnato da Masashi
@@ -61,7 +106,7 @@
             sua determinazione nel perseguire i suoi obiettivi <br />
             hanno reso Naruto un’icona per molti lettori italiani.
           </li>
-          <li>
+          <li id="l">
             <b>L <a href="deathnote.html">(Death Note)</a></b
             >:<br />
             Il misterioso detective noto solo come <b>“L”</b> è uno dei
@@ -70,7 +115,7 @@
             eccentrico e il suo desiderio di giustizia <br />
             lo rendono un personaggio amato e iconico.
           </li>
-          <li>
+          <li id="edward">
             <b
               >Edward Elric
               <a href="fullmetal.html">(Fullmetal Alchemist)</a> </b
@@ -81,7 +126,7 @@
             con suo fratello Alphonse lo rendono un personaggio <br />
             profondo e amato dai fan.
           </li>
-          <li>
+          <li id="spike">
             <b>Spike Spiegel <a href="cowboy.html">(Cowboy Bebop)</a> </b
             >:<br />
             Anche se Cowboy Bebop è originariamente un anime, il suo
@@ -91,7 +136,7 @@
             il suo carisma irresistibile lo rendono un personaggio <br />
             amato da molti.
           </li>
-          <li>
+          <li id="vegeta">
             <b>Vegeta <a href="dragonball.html">(Dragon Ball)</a> </b>:<br />
             Il principe dei Saiyan è un altro personaggio indimenticabile di
             Dragon Ball. Inizialmente introdotto come antagonista,
@@ -101,7 +146,7 @@
             apprezzato dai fan italiani per la sua determinazione e il suo
             orgoglio.
           </li>
-          <li>
+          <li id="eren">
             <b>Eren Yeager <a href="attack.html">(Attack on Titan)</a> </b
             >:<br />
             Protagonista di Attack on Titan, <b>Eren</b> è un personaggio che
@@ -110,7 +155,7 @@
             personaggio intenso e amato dai fan italiani per la sua <br />
             complessità emotiva.
           </li>
-          <li>
+          <li id="gon">
             <b>Gon Freecss <a href="hunter.html">(Hunter x Hunter)</a> </b
             >:<br />
             Nel mondo degli Hunter, <b>Gon Freecss</b> cerca suo padre e
@@ -118,7 +163,7 @@
             La sua innocenza, la sua determinazione e la sua crescita personale
             lo rendono un personaggio amato dai lettori.
           </li>
-          <li>
+          <li id="ichigo">
             <b>Ichigo Kurosaki <a href="bleach.html">(Bleach)</a> </b>:<br />
             <b>Ichigo</b> è un giovane con la capacità di vedere gli spiriti e
             di diventare un Shinigami. La sua forza, il suo coraggio <br />
@@ -128,70 +173,72 @@
 
           <p>Ecco una tabella riassuntiva:</p>
           <table>
-            <tr >
-            <th>Personaggio</th>
-            <th>Anime</th>
+            <tr>
+              <th>Personaggio</th>
+              <th>Anime</th>
               <th>Posizione in classifica</th>
             </tr>
-            <tr >
+            <tr>
               <td>Goku</td>
               <td>Dragonball</td>
               <td>1</td>
             </tr>
-            <tr >
+            <tr>
               <td>Luffy</td>
               <td>One Piece</td>
               <td>2</td>
             </tr>
-            <tr >
+            <tr>
               <td>Naruto</td>
               <td>Naruto</td>
               <td>3</td>
             </tr>
-            <tr >
+            <tr>
               <td>L</td>
               <td>Death Note</td>
               <td>4</td>
             </tr>
-            <tr >
+            <tr>
               <td>Edward Elric</td>
               <td>Fullmetal Alchemist</td>
               <td>5</td>
             </tr>
-            <tr >
+            <tr>
               <td>Spike Spiegel</td>
               <td>Cowboy Bebop</td>
               <td>6</td>
             </tr>
-            <tr >
+            <tr>
               <td>Vegeta</td>
               <td>Dragonball</td>
               <td>7</td>
             </tr>
-            <tr >
+            <tr>
               <td>Eren Yeager</td>
               <td>Attack on Titan</td>
               <td>8</td>
             </tr>
-            <tr >
+            <tr>
               <td>Eren Yeager</td>
               <td>Attack on Titan</td>
               <td>8</td>
             </tr>
-            <tr >
+            <tr>
               <td>Gon Freecss</td>
               <td>Hunter x Hunter</td>
               <td>9</td>
             </tr>
-            <tr >
+            <tr>
               <td>Ichigo Kurosaki</td>
               <td>Ichigo</td>
               <td>10</td>
             </tr>
           </table>
-        </font>
-      </ol>
-    </div>
-    <footer align="center"><b>Copyright @ 2025, Luca Ferrara</b></footer>
+        </ol>
+      </div>
+    </main>
+    <footer class="text-center py-3 bg-dark">
+      <b>© 2025 Manga-nello – Creato da Luca Ferrara</b>
+    </footer>
   </body>
 </html>
